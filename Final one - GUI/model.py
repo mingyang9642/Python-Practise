@@ -4,6 +4,7 @@ Created on Tue Nov 19 15:28:13 2019
 
 @author: gy19my
 """
+#import a series of modules
 import matplotlib
 import requests
 import bs4
@@ -18,6 +19,7 @@ import matplotlib.backends.backend_tkagg
 
 matplotlib.use('TkAgg')
 
+#rearrange the web content to make it as the "background"
 r = requests.get('http://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part9/data.html')
 content = r.text
 soup = bs4.BeautifulSoup(content, 'html.parser')
@@ -31,6 +33,7 @@ num_of_iterations = 100
 neighbourhood = 20
 agents = []
 
+#input the text file
 f = open("M:/Python/Final one - GUI/in.txt")
 environment = []
 for line in f:
@@ -55,12 +58,9 @@ for j in range(num_of_iterations):
         agents[i].eat()
         agents[i].share_with_neighbours()
 
-#def distance_between(self, agent):
-#    return (((self.x - agent.x)**2) + ((self.y - agent.y)**2))**0.5
 
 
-
-    
+#define the characteristic of those moving points and when they will stop 
 fig = matplotlib.pyplot.figure(figsize=(7, 7))
 ax = fig.add_axes([0, 0, 1, 1])
 
@@ -95,6 +95,7 @@ def gen_function(b = [0]):
 
 carry_on = True	
 
+#make a GUI to contain the animation
 def run():
     animation = matplotlib.animation.FuncAnimation(fig, update, frames=gen_function, repeat=False)
     canvas.draw()
@@ -111,6 +112,7 @@ model_menu.add_command(label="Run model", command=run)
 
 tkinter.mainloop()
 
+#The function "matplotlib.pyplot" is no longer needed here.
 """
 matplotlib.pyplot.xlim(0, 99)
 matplotlib.pyplot.ylim(0, 99)
