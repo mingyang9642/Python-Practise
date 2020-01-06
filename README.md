@@ -8,7 +8,7 @@ Python 3.7 environment, which can be established by installing Anaconda 3 on the
      Link: anaconda.com/distribution
 
 # Files/Directories
-There are four directories in this repository, three of which stands for steps to final programme, thereby the final one is the programme included with final code. Among these directories, each of them contains one “Agent.py” file and one “Model.py” file, since “Agent” is an inset to “Model”. Also, an “in.txt” file is included, which is for I/O.
+There are four directories in this repository, three of which stands for steps to final programme, thereby the final one is the programme included with final code. Among these directories, each of them contains one “Agent.py” file and one “Model.py” file, since “Agent” is an inset to “Model”. Also, an “in.txt” file is included, which is used for I/O.
 
 # Running the test
 - How to run?
