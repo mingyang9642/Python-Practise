@@ -31,7 +31,7 @@ num_of_iterations = 100
 neighbourhood = 20
 agents = []
 
-f = open("M:/Python/GUI/in.txt")
+f = open("M:/Python/Final one - GUI/in.txt")
 environment = []
 for line in f:
     parsed_line = str.split(line,",")

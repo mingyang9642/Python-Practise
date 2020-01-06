@@ -10,7 +10,7 @@ random.seed(2)
 
 
 
-f = open("M:/Python/Animation/in.txt")
+f = open("M:/Python/Fourth Step - Animation/in.txt")
 environment = []
 for line in f:
     parsed_line = str.split(line,",")
